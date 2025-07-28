@@ -9,7 +9,6 @@ function printInfo() {
     console.log("4. Search Contacts")
     console.log('5. Exit')
 }
-
 function addContact() {
     const name = prompt("Name: ")
     const email = prompt("Email: ")
@@ -20,7 +19,6 @@ function addContact() {
     contacts.push(contact)
     console.log("Added!")
 }
-
 function deleteContact() {
     console.log("Contact IDs")
     for (let i = 0; i < contacts.length; i++) {
