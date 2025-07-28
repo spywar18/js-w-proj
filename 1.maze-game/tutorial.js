@@ -1,11 +1,11 @@
 const prompt = require("prompt-sync")()
 const name = prompt("What is your name? ")
 console.log(`Hello ${name} welcome to our game!`)
-
 const shouldWePlay = prompt("Do you want to play? (y/n)")
 if (shouldWePlay.toLowerCase() === "y") {
 
-//game logic
+
+//game-logic
 const leftOrRight = prompt("You enter a maze, do you want to go left or right?")
 if (leftOrRight === "left") {
     console.log("You go left and see a bridge...")
