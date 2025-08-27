@@ -1,7 +1,8 @@
 const prompt = require("prompt-sync")()
 
-function makeMove(turn, board){
 
+
+function makeMove(turn, board){
     while (true) {
     const row = parseInt(prompt ("Enter the row (0-2):"))
     const col = parseInt(prompt ("Enter the column (0-2):"))
@@ -15,7 +16,6 @@ function makeMove(turn, board){
     }    
  }
 }
-
 function printBoard(board){
     for (let i = 0; i < board.length; i++) {
         const row = board[i];
