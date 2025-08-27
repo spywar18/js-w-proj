@@ -1,6 +1,5 @@
 const prompt = require("prompt-sync")()
 const fs = require("fs")
-
 function loadQuestions() {
     try { 
         const data = fs.readFileSync("questions.json", "utf8")
@@ -11,18 +10,15 @@ function loadQuestions() {
         return []
     }
 }
-
 function getRandomQuestions(questions, numQuestions) {
     if (numQuestions > questions.length) {
         numQuestions = questions.length
     }
-
     const shuffled = questions.sort(() => { 
         return 0.5 - Math.random() 
     })
     return shuffled.slice(0, numQuestions)
 }
-
 function askQuestion(question) {
     console.log(question.question)
     for (let i = 0; i < question.options.length; i++) {
